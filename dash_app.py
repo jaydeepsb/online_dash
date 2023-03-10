@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 
 app = Dash(__name__)
-
+server = app.server
 
 # Define the layout of the app
 app.layout = html.Div([
@@ -39,6 +39,4 @@ def update_output(input_value, n_clicks_inc, n_clicks_dec):
     return html.Div(input_value, style={'fontSize': font_size})
 
 if __name__ == "__main__":
-    #141.48.22.21
-    #app.run_server(debug=False, port=8050, host='0.0.0.0')
-    app.run_server(debug=True, port=8050, host='127.0.0.1')
+    app.run_server(debug=False)
