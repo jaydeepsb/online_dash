@@ -1,6 +1,4 @@
 import time
-import numpy as np
-
 import dash
 from dash import Dash, dcc, html, Input, Output, ctx, State
 from dash import dash_table as dt
